@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.getElementById("view-region").innerHTML = "Hello World";
+}
+
+function preferedLanguage() {
+    prefer = document.forms[0].languages.value;
+    alert("You prefer coding with:" + prefer);
+}
+</script>
+</head>
+<body>
+
+<h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
+
+<p>Click the button to trigger a function.</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="view-region"></p>
+
+	<form>
+	Choose which language you prefer:
+	<select id="languages" onchange="preferedLanguage()">
+	<option value="Java">Java</option>
+	<option value="C#">C#</option>
+	<option value="Python">Python</option>
+	</select>
+	</form>
+
+</body>
+</html>
